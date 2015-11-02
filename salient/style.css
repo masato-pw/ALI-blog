@@ -3261,11 +3261,11 @@ body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines
 body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:before, 
 body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:after {
 	 /* -webkit-transition: top 0.4s 0.45s ease, -webkit-transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear!important;
-   transition: top 0.4s 0.45s ease, transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear!important;*/
-   opacity: 1!important;
- }
- body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:before, 
- body #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:after {
+  transition: top 0.4s 0.45s ease, transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear!important;*/
+  opacity: 1!important;
+}
+body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:before, 
+body #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:after {
   /*transition: top 0.4s 0.45s ease, -webkit-transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear;
   transition: top 0.4s 0.45s ease, transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear;*/
   opacity: 1;
@@ -13720,6 +13720,11 @@ body:not(.woocommerce-cart) .main-content table tr:nth-child(2n+1) {
     color: #fff;
     /*background-color: #337ab7;*/
     border-color: #2e6da4;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    font-weight: 600;
   }
   .btn-primary a {
     color: #2196f3;
@@ -13731,6 +13736,11 @@ body:not(.woocommerce-cart) .main-content table tr:nth-child(2n+1) {
   }
   .btn-primary:hover {
     color: #fff;
+    background-color: #4285f4;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
   }
   .btn {
     border: none;
@@ -13742,3 +13752,59 @@ body:not(.woocommerce-cart) .main-content table tr:nth-child(2n+1) {
     padding: 10px 18px;
     line-height: 15px;
   }
+  article.post .more-link span, .blog-recent .more-link span {
+    background-color: #2196f3;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    width: auto;
+    cursor: pointer;
+    padding: 12px 16px;
+    font-size: 11px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 4px 0px rgba(204,204,204,0.50);
+  }
+  header#top nav ul li a {
+    color: #363636;
+    /* font-weight: 500; */
+  }
+  .thumbnail_cover {
+    height: 75px; 
+    max-width: 75px; 
+    display: inline-block;
+    /*overflow: hidden;*/
+    overflow: hidden;
+  }
+  .rpwwt-post-title {
+    vertical-align: top;
+    width: 160px;
+    margin-left: 13px;
+    display: inline-block;
+  }
+  @media only screen and (max-width: 1406px) and (min-width: 1px) {
+    .thumbnail_cover {
+      height: 75px; 
+      max-width: 100%; 
+      display: inline-block;
+      /*overflow: hidden;*/
+      overflow: hidden;
+    }
+    .rpwwt-post-title {
+      vertical-align: top;
+      width: 100%;
+      margin-left: 0px;
+      display: inline-block;
+    }
+  }
+article.post .post-header h2 a {
+    color: #363636 !important;
+}
+article.post .post-header h2 a:hover {
+    color: #4285f4 !important;
+}
+
