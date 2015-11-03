@@ -162,6 +162,10 @@ if($headerFormat == 'centered-menu-under-logo') $fullWidthHeader = 'false';
 
 									if(!empty($options['retina-logo'])) echo '<img class="retina-logo '.$dark_default_class.'" alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['retina-logo']) . '" />';
 
+									echo '<img class="logo_mobile '.$dark_default_class.'" alt="'. get_bloginfo('name') .'" src="
+									http://localhost:8888/pw_blog/wp-content/uploads/2015/11/logo.png" />';
+
+
 								 //starting logo 
 									if($activate_transparency == 'true'){
 										if(!empty($options['header-starting-logo'])) echo '<img class="starting-logo '.$default_logo_class.'"  alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['header-starting-logo']) . '" />';
@@ -223,7 +227,7 @@ if($headerFormat == 'centered-menu-under-logo') $fullWidthHeader = 'false';
 						</div><!--/span_9-->
 						<div class="col span_3 col_last header-login">
 							<a href="#" onclick="openNewWindow('https://app.prosperworks.com/users/sign_in')" class="btn btn-blank login-button">LOGIN</a>
-							<a href="#" onclick="openNewWindow('https://app.prosperworks.com/users/sign_up')" class="btn-primary btn signup-button">FREE TRIAL</a>
+							<a href="#" onclick="openNewWindow('https://app.prosperworks.com/users/sign_up')" class="btn btn-blank login-button second-login">FREE TRIAL</a>
 						</div>
 					</div><!--/row-->
 

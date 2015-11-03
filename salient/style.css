@@ -3261,11 +3261,11 @@ body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines
 body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:before, 
 body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:after {
 	 /* -webkit-transition: top 0.4s 0.45s ease, -webkit-transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear!important;
-  transition: top 0.4s 0.45s ease, transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear!important;*/
-  opacity: 1!important;
-}
-body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:before, 
-body #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:after {
+   transition: top 0.4s 0.45s ease, transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear!important;*/
+   opacity: 1!important;
+ }
+ body[data-bg-header="true"] #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:before, 
+ body #header-outer[data-permanent-transparent="1"] .lines-button.x2 .lines:after {
   /*transition: top 0.4s 0.45s ease, -webkit-transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear;
   transition: top 0.4s 0.45s ease, transform 0.3s ease, background-color 0.13s ease, opacity 0.13s linear;*/
   opacity: 1;
@@ -13701,11 +13701,32 @@ body:not(.woocommerce-cart) .main-content table tr:nth-child(2n+1) {
     margin: 6px 0 0 0;
     float: right;
   }
+  @media only screen and (min-width: 1001px) {
+    header#top #logo .logo_mobile { display: none!important; }
+  }
+
   @media only screen and (max-width: 1000px) and (min-width: 1px) {
     .col:last-child {
-      margin: 6px 0 0 30px;
+      margin: 6px 0 0 30px !important;
       float: right;
     }
+    body, .toggle h3 a, body .ui-widget, table, .bar_graph li span strong, #slide-out-widget-area .tagcloud a, #search-results .result .title span, .woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3, body .nectar-love span, body .nectar-social .nectar-love .nectar-love-count, body .carousel-heading h2 {
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 25.2px;
+      padding-top: 58px !important;
+    }
+    .nectar-social {
+      padding: 0;
+      margin: 0;
+      top: -44px !important;
+      position: relative;
+    }
+    .header-login {
+      margin-left: 100px !important;
+    }
+    header#top #logo .retina-logo { display: none!important; }
+    header#top #logo .logo_mobile { display: block!important; }
   }
   .btn-primary, .btn-default {
     background: #2196f3;
@@ -13801,10 +13822,53 @@ body:not(.woocommerce-cart) .main-content table tr:nth-child(2n+1) {
       display: inline-block;
     }
   }
-article.post .post-header h2 a {
+  article.post .post-header h2 a {
     color: #363636 !important;
-}
-article.post .post-header h2 a:hover {
+  }
+  article.post .post-header h2 a:hover {
     color: #4285f4 !important;
-}
-
+  }
+  .header-login a{
+    color: #fff;
+  }
+  .header-login{
+    top: 14px;
+  }
+  .second-login{
+    color: #fff;
+    /*font-weight: 600;*/
+  }
+  .#header-outer .row .col.span_3, #header-outer .row .col.span_9 {
+    width: auto;
+    top: 9px;
+  }
+  #header-outer, #header-space {
+    position: absolute !important;
+  }
+  #header-outer {
+    top: 0px !important;
+  }
+  body, .toggle h3 a, body .ui-widget, table, .bar_graph li span strong, #slide-out-widget-area .tagcloud a, #search-results .result .title span, .woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3, body, body .nectar-social .nectar-love .nectar-love-count, body .carousel-heading h2 {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 25.2px;
+    padding-top: 120px;
+  }
+  #header-outer .row .col.span_3, #header-outer .row .col.span_9 {
+      width: auto;
+  }
+  .nectar-social {
+    padding: 0;
+    margin: 0;
+    top: -107px;
+    position: relative;
+  }
+  header#top nav > ul > li > a {
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 18.2px;
+      font-weight: 400;
+      top: 3px;
+  }
+  
